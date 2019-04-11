@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title> 
+    <!-- Bootstrap dependencies -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--  JS dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+</head>
+
+<body>
+    <!-- Load Navbar -->
+    <iframe src="navbar.html" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>  
+
+    <!-- Meat of the index webpage-->
+    <h1> Summary: Latitude vs. X </h1>
+    <!-- Thumbnail to OpenWeatherMaps webpage -->
+    <a class = "thumbnail" href = "https://openweathermap.org/current" target="_blank">
+        <img class="img-fluid" class="img-responsive" src="assets/images/OWMlogo.jpg" width = "240" height = "240"
+        alt = "OpenWeatherMaps API link" style = "float:left; margin-right:10px; margin-bottom: 5px;">
+
+    </a>    
+    <p> 
+        This webpage's purpose is to showcase findings from a weather data exploration.  Weather data was scraped
+        from OpenWeatherMaps API. The visuals themeselves were created with Python by scraping weather data based 
+        on randomly generated latitudes, storing them in dataframes, and then creating visuals from those 
+        dataframes with Matplotlib.  The data used for this project was scraped on 1-5-17.   
+    </p>
+    <br>
+    <p>
+        This website has the 4 visuals, each of which show the relationship between four key weather data and Latitude.
+        These data include temperature [F], wind speed [mph], cloudiness[%], and humidity[%].  An in-depth analysis for each
+        visual can be found on the Plots subpages.  This website also includes the raw data used to create these plots 
+        and a comparison page to see all the plots next to eachother.  
+    </p>
+</body>
+</html>
+
+

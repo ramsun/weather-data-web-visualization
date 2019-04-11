@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Comparisson </title>
+    <!-- Bootstrap dependencies -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Grid styling -->
+    <style> 
+        .app {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax);
+        }
+    </style>
+</head>
+<body>
+    <!-- Load Navbar -->
+    <iframe src="navbar.html" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>    
+    
+    <!-- Web page header -->
+    <h1> Comparisson: Latitude vs. X </h1>
+    <p> Click any of the plots bellow for an in-depth analysis. </p>
+    
+    <!-- Create image grid -->
+    <div class="map">
+        <!-- Make images thumbnails to other web pages -->
+        <div class="row">
+            <div class="col-sm-6">
+                <a class = "thumbnail" href = "max_temp.html">
+                    <img class="img-fluid" class="img-responsive" src="assets/images/Fig1.png">
+                </a>
+                <a class = "thumbnail" href = "humidity.html">
+                    <img class="img-fluid" class="img-responsive" src="assets/images/Fig2.png">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <a class = "thumbnail" href = "cloudiness.html">
+                    <img class="img-fluid" class="img-responsive" src="assets/images/Fig3.png">
+                </a>
+                <a class = "thumbnail" href = "wind_speed.html">
+                    <img class="img-fluid"class="img-responsive" src="assets/images/Fig4.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
